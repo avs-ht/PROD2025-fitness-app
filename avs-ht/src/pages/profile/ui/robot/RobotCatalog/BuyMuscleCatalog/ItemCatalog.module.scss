@@ -1,0 +1,12 @@
+.catalog {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 0.5rem;
+  border: var(--app-border);
+  border-top: 0;
+  background-color: var(--background-color);
+  padding: 1rem;
+  @media (max-width: 500px) {
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  }
+}

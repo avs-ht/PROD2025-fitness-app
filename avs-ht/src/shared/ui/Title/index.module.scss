@@ -1,0 +1,9 @@
+.title {
+  max-width: 100%;
+  overflow: hidden;
+  color: var(--primary-color);
+  font-weight: 600;
+  font-family: var(--font-family-secondary);
+  text-align: center;
+  text-overflow: ellipsis;
+}

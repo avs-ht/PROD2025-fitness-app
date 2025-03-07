@@ -1,0 +1,56 @@
+.item {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding-inline: 0.25rem;
+  padding-block: 0.5rem;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  &:hover {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    svg {
+      color: var(--background-color);
+    }
+  }
+  &:not(:last-child) {
+    border-bottom: 2px solid var(--text-color);
+  }
+  .itemName {
+    flex: 1;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    .itemOrder {
+      font-weight: 600;
+    }
+    .itemTitle {
+      margin-right: 0.5rem;
+    }
+  }
+  .changeOrderButtons {
+    display: flex;
+    .changeOrderButton {
+      transition:
+        0.2s color,
+        0.2s background-color;
+      padding-inline: 0.25rem;
+      &:hover {
+        background-color: var(--background-color);
+        svg {
+          color: var(--primary-color);
+        }
+      }
+      &:not(:last-child) {
+        border-right: 2px solid;
+      }
+    }
+  }
+  &:hover {
+    .changeOrderButton:not(:last-child) {
+      border-right: 2px solid var(--background-color);
+    }
+  }
+}

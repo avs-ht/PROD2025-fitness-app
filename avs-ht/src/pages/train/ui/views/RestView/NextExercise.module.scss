@@ -1,0 +1,14 @@
+.nextExercise {
+  text-align: center;
+  .value {
+    color: var(--primary-color);
+    font-weight: 600;
+    line-height: 1.5;
+  }
+}
+
+.modalContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

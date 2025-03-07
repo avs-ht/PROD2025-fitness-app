@@ -1,0 +1,25 @@
+.progressBar {
+  position: relative;
+  border-radius: 1rem;
+  background-color: var(--secondary-color);
+
+  width: 100%;
+  min-height: 23px;
+  overflow: hidden;
+
+  .progressBarFill {
+    border-radius: inherit;
+    background-color: var(--primary-color);
+    min-height: 23px;
+  }
+  .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    color: white;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+}

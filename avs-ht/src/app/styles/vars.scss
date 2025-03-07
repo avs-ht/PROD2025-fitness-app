@@ -1,0 +1,27 @@
+:root {
+  --blue: #4a90e2;
+  --dark-blue: #2c3e50;
+  --dark-blue2: #2265b1;
+  --light-grey: #f8f8f8;
+  --red: #e74c3c;
+  --dark-red: #c0392b;
+  --torquoise: #40e0d0;
+  --transparent-black: #223c5033;
+
+  --primary-color: var(--blue);
+  --primary-color-hover: var(--dark-blue2);
+  --secondary-color: var(--torquoise);
+  --text-color: var(--dark-blue);
+  --background-color: var(--light-grey);
+  --error-color: var(--red);
+  --error-color-hover: var(--dark-red);
+  --box-shadow-color: var(--transparent-black);
+
+  --font-family-primary: 'Open Sans', sans-serif;
+  --font-family-secondary: 'Roboto Slab', serif;
+  --font-size: 16px;
+
+  --app-padding: 20px;
+  --app-border: 2px solid var(--primary-color);
+  --transition-duration: 0.2s;
+}

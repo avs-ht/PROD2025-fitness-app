@@ -1,0 +1,33 @@
+.header {
+  border-bottom: none;
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+
+  .listOfItems {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    .item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      border: var(--app-border);
+      padding: 0.5rem;
+      color: var(--primary-color);
+      &:not(:last-child) {
+        border-right: none;
+      }
+      &[data-active='true'] {
+        cursor: default;
+        background-color: var(--primary-color);
+        pointer-events: none;
+        color: var(--background-color);
+      }
+    }
+  }
+}
+
+.container {
+  margin-bottom: 1rem;
+}

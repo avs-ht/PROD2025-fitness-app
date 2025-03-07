@@ -1,0 +1,50 @@
+.textareaContainer {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-bottom: 0.5rem;
+  padding-top: 20px;
+  max-width: 250px;
+
+  .asTextButton {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .textarea {
+    transition: var(--transition-duration) background-color ease-in-out;
+    border: var(--app-border);
+    border-radius: 0.5rem;
+    background-color: var(--background-color);
+    padding: 0.5rem 0.75rem;
+    min-height: 150px;
+    resize: vertical;
+    color: var(--primary-color);
+    font-weight: bold;
+    white-space: prewrap;
+    &::-webkit-resizer {
+      display: none;
+    }
+    &.asText {
+      border: var(--app-border);
+      pointer-events: none;
+    }
+  }
+  .title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.15s all ease-in-out;
+    background-color: var(--background-color);
+    padding-inline: 0.3rem;
+    color: var(--primary-color);
+    font-weight: 600;
+    &[data-canbetextareatext='true']:has(~ .textarea.asText) {
+      transform: translate(10px, 12px);
+    }
+  }
+}

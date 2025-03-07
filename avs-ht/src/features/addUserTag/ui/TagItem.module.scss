@@ -1,0 +1,41 @@
+.item {
+  position: relative;
+  border: var(--app-border);
+  border-radius: 0.5rem;
+  padding-block: 0.25rem;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  color: var(--primary-color);
+  font-weight: bold;
+  .itemContent {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    .input {
+      border: none;
+      border-bottom: 2px solid var(--background-color);
+      background-color: var(--background-color);
+      padding: 0.25rem;
+      padding-block: 0.25rem;
+
+      width: 100%;
+      color: var(--primary-color);
+      caret-color: var(--primary-color);
+      font-weight: bold;
+      &:focus {
+        border-bottom: var(--app-border);
+      }
+    }
+
+    .deletButton,
+    .editButton {
+      color: var(--primary-color);
+    }
+    .deleteButton {
+      color: var(--error-color);
+      &[data-input-editable='true'] {
+        display: none;
+      }
+    }
+  }
+}

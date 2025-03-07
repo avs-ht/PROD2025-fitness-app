@@ -1,0 +1,22 @@
+.contentModal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding-top: 2rem !important;
+}
+
+.calendarButton {
+  white-space: none;
+
+  &google {
+    background-color: green !important;
+  }
+  &yandex {
+    background-color: red !important;
+  }
+  &outlook {
+    background-color: blue !important;
+  }
+}

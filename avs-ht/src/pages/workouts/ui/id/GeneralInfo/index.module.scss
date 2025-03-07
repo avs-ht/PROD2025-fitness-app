@@ -1,0 +1,22 @@
+.title {
+  margin-bottom: 0.5rem;
+}
+.subtitle {
+  margin-bottom: 0.75rem;
+  font-weight: normal;
+
+  .subtitleValue {
+    display: block;
+    color: var(--text-color);
+    font-weight: 600;
+  }
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  > * {
+    white-space: normal;
+  }
+}

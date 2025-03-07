@@ -1,0 +1,16 @@
+.filterTitle {
+  display: inline-block;
+  margin-right: 0.5rem;
+  text-align: left;
+  > span:nth-child(1) {
+    margin-right: 0.5rem;
+  }
+  > span:nth-child(2) {
+    color: var(--text-color);
+  }
+}
+.filters {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+}

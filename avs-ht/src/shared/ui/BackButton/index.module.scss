@@ -1,0 +1,11 @@
+.button {
+  margin-bottom: 1rem;
+  a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    svg {
+      color: var(--background-color);
+    }
+  }
+}

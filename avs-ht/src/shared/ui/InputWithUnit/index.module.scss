@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: left;
+
+  .label {
+    text-align: left;
+  }
+
+  .inputContainer {
+    display: flex;
+    gap: 0.5rem;
+    .input {
+      max-width: 150px;
+      &.inputWithoutSelect {
+        width: 100%;
+        max-width: 250px;
+      }
+    }
+    .select {
+      margin-top: 1px;
+    }
+  }
+}

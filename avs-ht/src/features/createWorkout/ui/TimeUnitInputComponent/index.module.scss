@@ -1,0 +1,34 @@
+.timeUnitInput {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  @media (max-width: 520px) {
+    align-items: center;
+    label {
+      text-align: center !important;
+    }
+    & > div > div {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .timeUnitInputTitle {
+    margin-bottom: 0.25rem;
+    text-align: left;
+  }
+  @media (max-width: 520px) {
+    align-items: center;
+    .timeUnitInputTitle {
+      text-align: center;
+    }
+  }
+  .hint {
+    margin-top: -0.5rem;
+    color: var(--primary-color);
+    font-size: 0.75rem;
+    &::before {
+      content: '*';
+    }
+  }
+}

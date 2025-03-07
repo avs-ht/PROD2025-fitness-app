@@ -1,0 +1,28 @@
+.valueButton {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  border-radius: 0.25rem;
+  background-color: var(--primary-color);
+  padding-inline: 0.5rem;
+  padding-block: 0.25rem;
+  min-width: 20px;
+  max-width: calc(50% - 0.5rem);
+
+  color: var(--background-color);
+  span {
+    max-width: 90%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  svg {
+    color: var(--background-color);
+  }
+}
+
+.selects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}

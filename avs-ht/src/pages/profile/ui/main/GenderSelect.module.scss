@@ -1,0 +1,14 @@
+.genderSelect {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  @media (max-width: 520px) {
+    align-items: center;
+    .select {
+      width: 100%;
+    }
+  }
+  .select {
+    margin-bottom: 1rem;
+  }
+}

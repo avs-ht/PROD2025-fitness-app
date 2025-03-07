@@ -1,0 +1,22 @@
+.workoutCard {
+  border: var(--app-border);
+  padding: 1rem;
+  width: 100%;
+  max-width: 420px;
+  .title {
+    margin-bottom: 0.5rem;
+    max-width: 100%;
+    overflow: hidden;
+    text-align: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .mainInfo {
+    margin-bottom: 1rem;
+  }
+}

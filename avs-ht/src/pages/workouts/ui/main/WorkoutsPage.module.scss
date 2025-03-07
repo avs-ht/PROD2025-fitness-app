@@ -1,0 +1,19 @@
+.title {
+  margin-bottom: 1rem;
+  font-size: clamp(1.5rem, 1.2727rem + 1.1364vw, 2rem);
+}
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  max-width: 100%;
+  > li {
+    max-width: 450px;
+  }
+  @media (max-width: 520px) {
+    flex-direction: column;
+    > li {
+      max-width: 100%;
+    }
+  }
+}

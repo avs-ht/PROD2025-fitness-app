@@ -1,0 +1,20 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  @media (max-width: 520px) {
+    align-items: center;
+  }
+
+  h4 {
+    margin-bottom: 0.5rem;
+    text-align: left;
+  }
+  .changeStepButtons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.25rem;
+    max-width: max-content;
+  }
+}

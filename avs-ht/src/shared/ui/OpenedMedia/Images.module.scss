@@ -1,0 +1,22 @@
+.nextButton,
+.prevButton {
+  position: absolute;
+  top: 0;
+
+  background-color: rgba(0, 0, 0, 0.5);
+  width: fit-content;
+  height: 100%;
+}
+.prevButton {
+  left: 0;
+}
+.nextButton {
+  right: 0;
+}
+
+.image {
+  z-index: 10000;
+  width: auto;
+  max-width: calc(100% - 4rem);
+  height: auto;
+}

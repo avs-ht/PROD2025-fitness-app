@@ -1,0 +1,31 @@
+.list {
+  padding-bottom: 0.5rem;
+  min-height: 400px;
+  max-height: 400px;
+  overflow: auto;
+  .exercise {
+    cursor: pointer;
+    padding: 0.5rem;
+    max-width: 100%;
+    overflow: hidden;
+    user-select: none;
+    &:not(:last-child) {
+      border-bottom: var(--app-border);
+    }
+    .exerciseType {
+      margin-right: 0.25rem;
+      font-weight: bold;
+    }
+    .exerciseTitle {
+      color: var(--primary-color);
+      font-weight: bold;
+    }
+    &:hover {
+      background-color: var(--primary-color);
+      .exerciseTitle,
+      .exerciseType {
+        color: var(--background-color);
+      }
+    }
+  }
+}

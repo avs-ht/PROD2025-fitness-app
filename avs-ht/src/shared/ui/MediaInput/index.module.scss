@@ -1,0 +1,110 @@
+.container {
+  position: relative;
+  margin-bottom: 1rem;
+
+  width: 100%;
+  max-width: 250px;
+  .inputContainer {
+    display: flex;
+    position: relative;
+
+    justify-content: center;
+    align-items: center;
+    border: var(--app-border);
+    border-radius: 0.75rem;
+    background-color: var(--background-color);
+    padding: 1rem;
+    aspect-ratio: 2;
+    width: 100%;
+    max-width: 250px;
+    font-weight: 600;
+    user-select: none;
+    &[data-file-limit='true'] {
+      filter: grayscale(100%);
+      & ~ .signs {
+        filter: grayscale(100%);
+      }
+    }
+    .input {
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      cursor: pointer;
+      width: 100%;
+      height: 100%;
+      &:disabled {
+        cursor: not-allowed;
+        pointer-events: none;
+      }
+    }
+    .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: var(--primary-color);
+
+      svg {
+        order: -1;
+      }
+    }
+  }
+  .signs {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+    font-size: 0.75rem;
+    & span::before {
+      content: '*';
+    }
+  }
+  .files {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+
+    .uploadedFile {
+      position: relative;
+      width: auto;
+      max-width: 100%;
+      height: auto;
+      max-height: 100%;
+      img,
+      video {
+        max-width: 100px;
+        object-fit: contain;
+      }
+      // img {
+      //   max-height: 50px;
+      // }
+      // video {
+      //   max-width: 50px;
+      // }
+
+      .deleteImageButton {
+        display: flex;
+        position: absolute;
+        top: 0;
+        right: 0;
+        justify-content: center;
+        align-items: center;
+        z-index: 3;
+        background-color: var(--primary-color);
+        aspect-ratio: 1;
+        width: 20px;
+        color: white;
+        line-height: 0;
+      }
+      .openImageButton {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.tags {
+  margin-bottom: 1rem;
+  max-width: 500px;
+  .title {
+    max-width: 100%;
+    text-align: left;
+    word-wrap: break-word;
+  }
+  .tagsList {
+    max-width: 100%;
+    .tag {
+      max-width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+}
+.tagsMore {
+  color: var(--primary-color);
+
+  font-weight: 600;
+}

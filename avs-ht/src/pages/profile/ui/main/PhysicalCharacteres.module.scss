@@ -1,0 +1,15 @@
+.title {
+  text-align: left;
+}
+.hint {
+  max-width: 300px;
+  color: var(--primary-color);
+  font-size: 0.75rem;
+}
+
+@media (max-width: 520px) {
+  .hint,
+  .title {
+    text-align: center;
+  }
+}

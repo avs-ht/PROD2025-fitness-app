@@ -1,0 +1,30 @@
+.addField {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  .addButton {
+    margin-bottom: -8px;
+  }
+  &:has([data-error]) .addButton {
+    margin-bottom: 3px;
+  }
+  @media (max-width: 420px) {
+    flex-direction: column;
+    gap: 0;
+    .addButton {
+      margin-bottom: 0;
+    }
+  }
+}
+.listOfTags {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.hint {
+  font-size: 0.75rem;
+  @media (max-width: 420px) {
+    display: block;
+    text-align: center;
+  }
+}

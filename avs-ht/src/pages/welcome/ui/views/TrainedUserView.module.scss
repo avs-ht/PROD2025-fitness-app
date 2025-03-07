@@ -1,0 +1,49 @@
+.title {
+  margin-bottom: 1.25rem;
+  font-size: clamp(1.875rem, 3.103vw + 1.254rem, 3rem);
+  white-space: nowrap;
+}
+
+.recommedations {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  border-radius: 20px;
+  background-color: var(--primary-color);
+  padding: 1rem;
+  * {
+    color: var(--background-color);
+  }
+
+  .list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    .listItem {
+      font-size: clamp(0.8rem, 2.414vw + 0.142rem, 1.25rem);
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &:has(~ .achievement) {
+    margin-bottom: 1rem;
+  }
+}
+.subtitle {
+  font-size: clamp(1rem, 1.379vw + 0.724rem, 1.5rem);
+}
+.achiviement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+  .subtitle {
+    margin-bottom: 0.6rem;
+  }
+}
+.goToWorkouts a {
+  flex: 1;
+}

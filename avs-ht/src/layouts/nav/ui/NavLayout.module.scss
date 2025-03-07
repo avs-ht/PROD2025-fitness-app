@@ -1,0 +1,24 @@
+:root {
+  --nav-size: 220px;
+  &:has(aside[data-nav-closed='true']) {
+    --nav-size: 70px;
+  }
+  @media (max-width: 850px) {
+    --nav-size: 80px;
+  }
+  @media (max-width: 420px) {
+    --nav-size: 50px;
+  }
+}
+.content {
+  margin-left: var(--nav-size);
+  padding-block: 1.25rem;
+  @media (max-width: 850px) {
+    margin-bottom: var(--nav-size);
+    margin-left: 0;
+  }
+  &:has([data-robot]) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}

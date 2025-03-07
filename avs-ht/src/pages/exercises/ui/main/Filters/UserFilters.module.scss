@@ -1,0 +1,12 @@
+.selects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  @media (max-width: 520px) {
+    justify-content: center;
+    text-align: center;
+  }
+  .select {
+    min-width: 250px;
+  }
+}

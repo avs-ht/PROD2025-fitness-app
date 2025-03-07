@@ -1,0 +1,53 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  .autoDifficultyText {
+    @media (max-width: 520px) {
+      text-align: center;
+    }
+  }
+  @media (max-width: 520px) {
+    align-items: center;
+  }
+  .title {
+    display: inline;
+    text-align: left;
+    @media (max-width: 520px) {
+      text-align: center;
+    }
+    .staticTitle {
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+    .difficultySelects {
+      @media (max-width: 520px) {
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+      }
+      .separator {
+        display: inline;
+        padding-inline: 1rem;
+        @media (max-width: 520px) {
+          display: none;
+        }
+      }
+      .autoButton,
+      .manualButton {
+        transition: var(--transition-duration) background-color ease-in-out;
+        cursor: pointer;
+        border: var(--app-border);
+        border: 2px solid var(--text-color);
+        border-radius: 0.5rem;
+        padding: 0.5rem 0.75rem;
+        text-align: center;
+        &:disabled {
+          border: var(--app-border);
+          color: var(--primary-color);
+        }
+      }
+    }
+  }
+}

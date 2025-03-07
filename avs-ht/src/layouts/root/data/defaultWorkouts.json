@@ -1,0 +1,113 @@
+[
+  {
+    "title": "Тренировка для начинающих",
+    "id": "workout1",
+    "restTime": 60,
+    "restTimeUnit": "seconds",
+    "difficulty": "easy",
+    "exercises": [
+      {
+        "exerciseId": "1",
+        "targetType": "times",
+        "targetValue": 10
+      },
+      {
+        "exerciseId": "2",
+        "targetType": "time",
+        "targetUnit": "seconds",
+        "targetValue": 30
+      },
+      {
+        "exerciseId": "7",
+        "targetType": "times",
+        "targetValue": 15
+      },
+      {
+        "exerciseId": "9",
+        "targetType": "time",
+        "targetUnit": "minutes",
+        "targetValue": 2
+      }
+    ]
+  },
+  {
+    "title": "Средняя кардио-тренировка",
+    "id": "workout2",
+    "restTime": 45,
+    "restTimeUnit": "seconds",
+    "difficulty": "medium",
+    "exercises": [
+      {
+        "exerciseId": "5",
+        "targetType": "time",
+        "targetUnit": "minutes",
+        "targetValue": 10
+      },
+      {
+        "exerciseId": "8",
+        "targetType": "times",
+        "targetValue": 8
+      },
+      {
+        "exerciseId": "12",
+        "targetType": "time",
+        "targetUnit": "minutes",
+        "targetValue": 5
+      },
+      {
+        "exerciseId": "3",
+        "targetType": "times",
+        "targetValue": 12
+      },
+      {
+        "exerciseId": "10",
+        "targetType": "time",
+        "targetUnit": "minutes",
+        "targetValue": 3
+      }
+    ]
+  },
+  {
+    "title": "Продвинутая силовая тренировка",
+    "id": "workout3",
+    "restTime": 90,
+    "restTimeUnit": "seconds",
+    "difficulty": "hard",
+    "exercises": [
+      {
+        "exerciseId": "2",
+        "targetType": "weight",
+        "targetUnit": "kilograms",
+        "targetValue": 50
+      },
+      {
+        "exerciseId": "11",
+        "targetType": "times",
+        "targetValue": 15
+      },
+      {
+        "exerciseId": "4",
+        "targetType": "time",
+        "targetUnit": "seconds",
+        "targetValue": 60
+      },
+      {
+        "exerciseId": "6",
+        "targetType": "times",
+        "targetValue": 20
+      },
+      {
+        "exerciseId": "13",
+        "targetType": "time",
+        "targetUnit": "minutes",
+        "targetValue": 2
+      },
+      {
+        "exerciseId": "14",
+        "targetType": "time",
+        "targetUnit": "minutes",
+        "targetValue": 3
+      }
+    ]
+  }
+]

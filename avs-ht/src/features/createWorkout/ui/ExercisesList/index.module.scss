@@ -1,0 +1,24 @@
+.componentContainer {
+  display: flex;
+  flex-direction: column;
+
+  .list {
+    border: 2px solid var(--text-color);
+    max-width: 400px;
+    user-select: none;
+  }
+  @media (max-width: 520px) {
+  }
+  .emptyMessage {
+    color: var(--primary-color);
+  }
+  .list,
+  .emptyMessage {
+    margin-bottom: 1rem;
+  }
+  @media (max-width: 520px) {
+    .emptyMessage {
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  .title {
+    margin-bottom: 0.5rem;
+    font-size: clamp(1.5rem, 1.136vw + 1.273rem, 2rem);
+    text-align: left;
+  }
+  @media (max-width: 520px) {
+    align-items: center;
+    .title {
+      text-align: center;
+    }
+  }
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    @media (max-width: 520px) {
+      justify-content: center;
+    }
+  }
+}

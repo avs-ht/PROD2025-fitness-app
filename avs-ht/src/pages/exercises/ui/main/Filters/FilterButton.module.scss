@@ -1,0 +1,12 @@
+.button {
+  filter: grayscale(100%);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  &.active {
+    filter: grayscale(0);
+  }
+  @media (max-width: 520px) {
+    padding-inline: 0.5rem;
+  }
+}

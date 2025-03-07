@@ -1,0 +1,22 @@
+.decorCatalog {
+  border: var(--app-border);
+  padding: 1rem;
+  padding-top: 0.5rem;
+  .title {
+    margin-bottom: 1rem;
+    font-size: clamp(1rem, 0.7727rem + 1.1364vw, 1.5rem);
+    line-height: 1.05;
+  }
+  .catalog {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    .catalogRow {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 0.5rem;
+      width: 100%;
+    }
+  }
+}

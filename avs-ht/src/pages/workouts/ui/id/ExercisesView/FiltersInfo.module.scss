@@ -1,0 +1,18 @@
+.filtersInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-bottom: 1rem;
+  .filterTitle {
+    margin-bottom: 0.25rem;
+    max-height: 200px;
+
+    overflow: visible;
+    .filterTitleName {
+      color: var(--primary-color);
+    }
+    .filterTitleValue {
+      font-weight: bold;
+    }
+  }
+}

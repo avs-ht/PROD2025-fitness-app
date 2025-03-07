@@ -1,0 +1,85 @@
+.circularTimer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+
+  .circleBackground {
+    fill: none;
+    stroke: var(--secondary-color);
+    stroke-width: 10;
+  }
+  .circleProgress {
+    fill: none;
+    stroke: var(--primary-color);
+    stroke-width: 10;
+    stroke-linecap: round;
+    transform: scaleX(-1) rotate(-90deg);
+    transform-origin: 50% 50%;
+    transition: stroke-dashoffset 1s linear;
+  }
+  .timerPicture {
+    position: relative;
+
+    width: 100px;
+    height: 100px;
+
+    .timerText {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: background-position 1s ease;
+      background: linear-gradient(
+        to left,
+        var(--primary-color) 50%,
+        var(--secondary-color) 50%
+      );
+      background-position: right;
+      background-size: 200% 100%;
+      background-clip: text;
+      -webkit-background-clip: text;
+      overflow: hidden;
+      color: transparent;
+
+      font-weight: bold;
+      font-size: 1.4rem;
+    }
+  }
+  .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    .decreaseTimeButton,
+    .increaseTimeButton {
+      border: var(--app-border);
+      border-radius: 0.5rem;
+      padding: 0.25rem;
+      aspect-ratio: 1;
+      width: 42px;
+
+      color: var(--primary-color);
+      font-weight: bold;
+      line-height: 0;
+      &:hover {
+        border-color: var(--primary-color);
+        background-color: var(--primary-color);
+        color: var(--background-color);
+      }
+    }
+    .decreaseTimeButton {
+      order: 0;
+    }
+    .stopButton {
+      order: 1;
+      svg {
+        color: var(--primary-color);
+      }
+    }
+    .increaseTimeButton {
+      order: 2;
+    }
+  }
+}

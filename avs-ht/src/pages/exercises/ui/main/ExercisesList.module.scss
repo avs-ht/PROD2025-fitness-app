@@ -1,0 +1,63 @@
+.exercisesList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  @media (max-width: 520px) {
+    flex-direction: column;
+  }
+  &[data-visibility='true'] {
+    display: none;
+  }
+}
+
+.mainTitle {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  font-size: clamp(1.25rem, 1.705vw + 0.909rem, 2rem);
+  .mainTitleContent {
+    display: flex;
+    position: relative;
+    align-items: center;
+
+    .closeButtonIcon {
+      transform: rotate(-90deg);
+      margin-bottom: -5px;
+      line-height: 0;
+      &[data-categories-hidden='true'] {
+        transform: rotate(0);
+      }
+    }
+    .closeCategoriesButton {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      color: var(--primary-color);
+    }
+  }
+}
+
+.noFound {
+  display: flex;
+  flex-direction: column;
+
+  font-size: clamp(1rem, 0.7727rem + 1.1364vw, 1.5rem);
+
+  .link {
+    display: block;
+    color: var(--primary-color);
+  }
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+
+  margin-bottom: 1rem;
+  &:has(+ [data-visibility='true']) {
+    display: none;
+  }
+}

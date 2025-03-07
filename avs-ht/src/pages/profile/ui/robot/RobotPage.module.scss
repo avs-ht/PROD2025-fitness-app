@@ -1,0 +1,29 @@
+.page {
+  display: flex;
+  flex-direction: row !important;
+  align-items: stretch !important;
+  gap: 0.5rem;
+
+  padding-block: 1.25rem;
+
+  .firstBlock {
+    position: relative;
+    border: var(--app-border);
+    width: calc(45% - 0.5rem);
+    max-width: 100%;
+  }
+  .secondBlock {
+    width: calc(55% - 0.5rem);
+  }
+  @media (max-width: 620px) {
+    flex-direction: column !important;
+    padding-top: 0;
+    .secondBlock,
+    .firstBlock {
+      width: 100%;
+    }
+    .firstBlock {
+      height: 50vh;
+    }
+  }
+}

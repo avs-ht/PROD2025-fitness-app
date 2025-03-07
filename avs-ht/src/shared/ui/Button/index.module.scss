@@ -1,0 +1,35 @@
+.button {
+  transition: var(--transition-duration) background-color ease-in-out;
+  border-radius: 0.5rem;
+  background-color: var(--primary-color);
+  padding: 0.8rem 2rem;
+  color: var(--background-color);
+  font-weight: 600;
+  font-family: var(--font-family-secondary);
+  white-space: nowrap;
+  &:disabled {
+    filter: grayscale(100%);
+    &:hover {
+      background-color: var(--primary-color);
+    }
+  }
+  &:hover {
+    background-color: var(--primary-color-hover);
+  }
+  &.link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    a {
+      padding: 0.8rem 2rem;
+    }
+  }
+  &.deleteButton {
+    background-color: var(--error-color);
+    &:hover {
+      background-color: var(--error-color-hover);
+    }
+  }
+}

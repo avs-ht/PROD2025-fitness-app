@@ -1,0 +1,23 @@
+.title {
+  margin-bottom: 0.25rem;
+  max-width: 70%;
+  font-size: clamp(1rem, 1.136vw + 0.773rem, 1.5rem);
+  text-align: left;
+  word-break: break-all;
+}
+.description {
+  max-width: 500px;
+  word-break: break-all;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  > button {
+    white-space: wrap;
+  }
+}
+.description {
+  margin-bottom: 0.5rem;
+}

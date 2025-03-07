@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  gap: 1rem;
+  padding-bottom: 2rem;
+  min-height: 250px;
+  .exerciseInfo {
+    margin-bottom: 1rem;
+  }
+  @media (max-width: 640px) {
+    align-items: center;
+    text-align: center;
+  }
+}
+.buttons {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  justify-content: space-between;
+  width: 100%;
+  .nextExerciseButton,
+  .prevExerciseButton {
+    border-radius: 0.5rem;
+    background-color: var(--primary-color);
+    padding: 0.25rem;
+    line-height: 0;
+    svg {
+      color: var(--background-color);
+    }
+  }
+}
+
+.mediaButtons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  &:not(:has(button)) {
+    display: none;
+  }
+  @media (max-width: 640px) {
+    flex-direction: column;
+  }
+}
